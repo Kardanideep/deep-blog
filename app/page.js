@@ -41,54 +41,58 @@ export default function Home() {
         </div>
       </section>
 
-<section className="py-12 bg-gray-100 dark:bg-gray-900">
+      <section className="py-12 bg-gray-100 dark:bg-gray-900">
   <div className="container px-4 mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Pricing Plans</h2>
-      <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Choose the plan that suits you best</p>
+      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Why Us?</h2>
+      <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+        Empowering developers with practical programming resources and user-friendly guidance.
+      </p>
     </div>
-    <div className="flex flex-wrap justify-center">
-      {/* Basic Plan */}
+    <div className="flex flex-wrap justify-center items-stretch">
+      {/* Column 1 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Basic</h3>
-          <p className="mt-4 text-gray-500 dark:text-gray-300">$10/month</p>
+        <div className="flex flex-col h-full p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Comprehensive Code Examples</h3>
+          <p className="mt-4 text-gray-500 dark:text-gray-300">
+            Access a wide range of programming examples for different scenarios and languages. Copy and implement them with ease.
+          </p>
           <ul className="mt-6 mb-6 space-y-4">
-            <li className="text-gray-600 dark:text-gray-400"><s>50GB Storage</s></li>
-            <li className="text-gray-600 dark:text-gray-400">Basic Support</li>
-            <li className="text-gray-600 dark:text-gray-400"><s>Up to 5 Users</s></li>
-            <li className="text-gray-600 dark:text-gray-400"><s>Community Access</s></li>
-            <li className="text-gray-600 dark:text-gray-400">Weekly Updates</li>
+            <li className="text-gray-600 dark:text-gray-400">Syntax-focused snippets</li>
+            <li className="text-gray-600 dark:text-gray-400">Real-world use cases</li>
+            <li className="text-gray-600 dark:text-gray-400">Optimized for learners</li>
           </ul>
+          <div className="mt-auto"></div>
         </div>
       </div>
-      {/* Standard Plan */}
+      {/* Column 2 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center border-2 border-purple-500">
-          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Standard</h3>
-          <p className="mt-4 text-gray-500 dark:text-gray-300">$20/month</p>
-          <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-purple-500 rounded-full">Bestseller</span>
+        <div className="flex flex-col h-full p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Detailed Explanations</h3>
+          <p className="mt-4 text-gray-500 dark:text-gray-300">
+            Understand programming concepts through easy-to-follow guides tailored for beginners and advanced users alike.
+          </p>
           <ul className="mt-6 mb-6 space-y-4">
-            <li className="text-gray-600 dark:text-gray-400">50GB Storage</li>
-            <li className="text-gray-600 dark:text-gray-400">Priority Support</li>
-            <li className="text-gray-600 dark:text-gray-400">Up to 5 Users</li>
-            <li className="text-gray-600 dark:text-gray-400">Community Access</li>
-            <li className="text-gray-600 dark:text-gray-400">Daily Updates</li>
+            <li className="text-gray-600 dark:text-gray-400">Step-by-step tutorials</li>
+            <li className="text-gray-600 dark:text-gray-400">Practical coding tips</li>
+            <li className="text-gray-600 dark:text-gray-400">Comprehensive FAQs</li>
           </ul>
+          <div className="mt-auto"></div>
         </div>
       </div>
-      {/* Premium Plan */}
+      {/* Column 3 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-        <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">Premium</h3>
-          <p className="mt-4 text-gray-500 dark:text-gray-300">$30/month</p>
+        <div className="flex flex-col h-full p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">User-Friendly Features</h3>
+          <p className="mt-4 text-gray-500 dark:text-gray-300">
+            Navigate effortlessly through our platform, designed to offer a seamless experience for all users.
+          </p>
           <ul className="mt-6 mb-6 space-y-4">
-            <li className="text-gray-600 dark:text-gray-400">200GB Storage</li>
-            <li className="text-gray-600 dark:text-gray-400">24/7 Support</li>
-            <li className="text-gray-600 dark:text-gray-400">Unlimited Users</li>
-            <li className="text-gray-600 dark:text-gray-400">Community Access</li>
-            <li className="text-gray-600 dark:text-gray-400">Real-time Updates</li>
+            <li className="text-gray-600 dark:text-gray-400">Intuitive interface</li>
+            <li className="text-gray-600 dark:text-gray-400">Mobile-friendly design</li>
+            <li className="text-gray-600 dark:text-gray-400">Accessible resources</li>
           </ul>
+          <div className="mt-auto"></div>
         </div>
       </div>
     </div>
@@ -97,11 +101,12 @@ export default function Home() {
 
 
 
+
 <section className="py-12 bg-white dark:bg-gray-800">
   <div className="container px-4 mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">What Our Clients Say</h2>
-      <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Hear from our satisfied customers</p>
+      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">What Our Users Say</h2>
+      <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Hear from our satisfied Users</p>
     </div>
     <div className="flex flex-wrap justify-center">
       {/* Testimonial 1 */}

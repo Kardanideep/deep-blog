@@ -2,6 +2,16 @@
 import { Button } from '@/components/ui/button';
 
 import { useState } from 'react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import Link from 'next/link';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -9,6 +19,7 @@ function ContactUs() {
     email: '',
     message: ''
   });
+  const [Open, setOpen] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +32,7 @@ function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
+    setOpen(true)
     setFormData({ 
        name: '',
       email: '',
@@ -28,7 +40,24 @@ function ContactUs() {
     // Here, you can handle the form submission (e.g., send data to an API)
   };
 
+
   return (
+    <>
+    <Dialog open={Open} onOpenChange={setOpen}>
+    <DialogContent className="sm:max-w-[300px]">
+      <DialogHeader>
+        <DialogTitle>Success</DialogTitle>
+        <DialogDescription>
+        Your message has been sent successfully. Thank you for reaching out to us!
+        </DialogDescription>
+      </DialogHeader>
+      <DialogFooter>
+        <Button asChild className="mx-1" variant="outline">
+              <Link href="/">Continue</Link>
+        </Button>
+      </DialogFooter>
+    </DialogContent>
+  </Dialog>
     <section className="body-font relative">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
@@ -44,6 +73,7 @@ function ContactUs() {
                   type="text"
                   id="name"
                   name="name"
+                  required
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -57,6 +87,7 @@ function ContactUs() {
                   type="email"
                   id="email"
                   name="email"
+                  required
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -69,6 +100,7 @@ function ContactUs() {
                 <textarea
                   id="message"
                   name="message"
+                  required
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500  focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
@@ -115,6 +147,7 @@ function ContactUs() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 
