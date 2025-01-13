@@ -21,17 +21,6 @@ This is a Next.js blog application designed to provide tutorials and resources f
 
 ---
 
-
-## Scripts
-
-- `npm run dev`: Starts the development server.
-- `npm run build`: Builds the production application.
-- `npm start`: Starts the production server.
-- `npm run lint`: Runs linting on your code.
-- `npm run format`: Formats your code with Prettier.
-
----
-
 ## Project Structure
 ```
 .
