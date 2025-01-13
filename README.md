@@ -23,7 +23,8 @@ This is a Next.js blog application designed to provide tutorials and resources f
 
 ## Project Structure
 ```
-.
+deep-blog/
+|
 ├── .next        # Compiled files for production and development
 ├── app          # Application-specific logic and routing
 ├── components   # Reusable React components
