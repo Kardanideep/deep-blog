@@ -35,12 +35,13 @@ This is a Next.js blog application designed to provide tutorials and resources f
 ## Project Structure
 ```
 .
+├── .next        # Compiled files for production and development
+├── app          # Application-specific logic and routing
 ├── components   # Reusable React components
-├── pages        # Next.js pages
+├── content      # Blog posts and dynamic content
+├── lib          # Libraries and helper functions
 ├── public       # Static assets
-├── styles       # Global styles
-├── utils        # Utility functions
-└── ...
+└── styles       # Global styles
 ```
 
 ---
